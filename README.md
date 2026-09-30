@@ -5,7 +5,7 @@
 ║ 1. Tudo que está entre colchetes, como [NOME DO PROJETO], é placeholder. ║
 ║    Substitua pelo valor real e REMOVA os colchetes.                      ║
 ║ 2. Comentários como este (<!- - ... - ->) não aparecem no GitHub.        ║
-║    Eles são instruções para você. Apague-os ao final.                    ║
+║    Eles são instruções para você. A                    ║
 ║ 3. Seção que não se aplica ao seu projeto? Apague a seção inteira.       ║
 ║    Ex.: projeto só de software → apague "Firmware" e "Hardware".         ║
 ║ 4. Para achar o que falta preencher, busque no VS Code (Ctrl+Shift+F)    ║
@@ -20,8 +20,6 @@
 <img src="docs/img/logo.png" alt="Logo do [NOME DO PROJETO]" width="160">
 
 # [NOME DO PROJETO]
-
-**[SLOGAN — UMA FRASE QUE DIGA O QUE O PROJETO FAZ]**
 
 <!--
   BADGES — escolha as que se aplicam e apague as outras.
@@ -77,9 +75,7 @@ Desenvolvido no **Samsung Ocean Manaus** · Universidade do Estado do Amazonas (
 <!--
   Descreva o problema ANTES de falar da solução. Responda:
   - Quem sofre com esse problema? (usuário, empresa, comunidade)
-  - Como ele é resolvido hoje e por que isso não é suficiente?
-  - Se possível, traga um número (tempo perdido, custo, frequência).
-  2 a 5 frases bastam.
+  - Como ele é resolvido hoje e por que isso não é suficiente?.
 -->
 [DESCREVA AQUI O PROBLEMA QUE O PROJETO RESOLVE]
 
@@ -114,7 +110,10 @@ Desenvolvido no **Samsung Ocean Manaus** · Universidade do Estado do Amazonas (
 Vídeo de demonstração: [LINK DO VÍDEO OU "não disponível"]
 
 ---
-
+### 1.6 Fluxogramas no Draw.io
+<!--
+  Coloque as imagens em docs/img/. Use fotos utilizando o Draw.io
+  print da interface
 ## 2. Responsáveis e autores
 
 <!--
