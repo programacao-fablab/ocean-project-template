@@ -1,0 +1,246 @@
+# =============================================================================
+#  .gitignore universal — Samsung Ocean Manaus (UEA)
+#  Firmware (PlatformIO / Arduino / ESP-IDF / STM32 / RP2040) + Node + Python
+#
+#  ATENÇÃO: o .gitignore NÃO remove arquivos que já foram commitados.
+#  Se um segredo já entrou no Git:
+#     git rm --cached caminho/do/arquivo
+#     e REVOGUE a credencial (o histórico continua público).
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# 1. SEGREDOS E CONFIGURAÇÃO LOCAL  (obrigatório — não remova esta seção)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+
+# Segredos de firmware (versione só o modelo *.example.h)
+secrets.h
+**/secrets.h
+credentials.h
+**/credentials.h
+!secrets.example.h
+!**/secrets.example.h
+
+# Chaves, certificados e contas de serviço
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt.local
+*.keystore
+*.jks
+credentials.json
+service-account*.json
+*-service-account.json
+google-services.json
+GoogleService-Info.plist
+
+# Configurações locais da máquina (porta serial, caminhos pessoais)
+*.local
+config.local.*
+platformio_override.ini
+.secrets/
+
+# Supabase CLI (estado local)
+supabase/.temp/
+supabase/.branches/
+supabase/.env
+
+
+# -----------------------------------------------------------------------------
+# 2. FIRMWARE — PlatformIO
+# -----------------------------------------------------------------------------
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/.browse.c_cpp.db*
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/ipch/
+
+
+# -----------------------------------------------------------------------------
+# 3. FIRMWARE — Arduino IDE / ESP-IDF / STM32CubeIDE / Pico SDK / CMake
+# -----------------------------------------------------------------------------
+# Artefatos de compilação
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.obj
+*.a
+*.d
+*.elf
+*.hex
+*.map
+*.lst
+*.su
+*.uf2
+# Binários: ignorados por padrão. Para publicar um .bin de release,
+# anexe-o em GitHub Releases em vez de commitar.
+*.bin
+
+# ESP-IDF
+sdkconfig.old
+managed_components/
+dependencies.lock
+
+# STM32CubeIDE / Eclipse (versione o .ioc, .project e .cproject)
+Debug/
+Release/
+.metadata/
+.settings/
+*.launch
+
+# Keil / IAR
+*.uvguix.*
+*.uvoptx
+Objects/
+Listings/
+
+
+# -----------------------------------------------------------------------------
+# 4. ELETRÔNICA E FABRICAÇÃO DIGITAL
+# -----------------------------------------------------------------------------
+# KiCad
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.lck
+_autosave-*
+\#auto_saved_files\#
+*.bak
+
+# Fritzing / EasyEDA temporários
+*.fzz.bak
+
+# Impressão 3D: G-code depende da impressora; versione STL/STEP/3MF
+*.gcode
+*.bgcode
+*.gco
+
+# FreeCAD backups
+*.FCBak
+*.FCStd1
+
+
+# -----------------------------------------------------------------------------
+# 5. NODE.JS / FRONTEND / MOBILE
+# -----------------------------------------------------------------------------
+node_modules/
+.pnpm-store/
+dist/
+out/
+.next/
+.nuxt/
+.output/
+.vite/
+.svelte-kit/
+.turbo/
+.vercel/
+.netlify/
+.cache/
+.parcel-cache/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+
+# React Native / Expo / Capacitor
+.expo/
+android/app/build/
+android/.gradle/
+android/local.properties
+ios/Pods/
+ios/build/
+*.apk
+*.aab
+*.ipa
+
+
+# -----------------------------------------------------------------------------
+# 6. PYTHON / ANÁLISE DE DADOS
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.python-version
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+# Dados grandes ou brutos: versione só amostras pequenas ou o script gerador
+data/raw/
+*.sqlite3
+*.db
+
+
+# -----------------------------------------------------------------------------
+# 7. EDITORES
+# -----------------------------------------------------------------------------
+# VS Code: compartilhe só extensões recomendadas e configurações do projeto
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.code-workspace
+
+# JetBrains (CLion, PyCharm, WebStorm)
+.idea/
+
+# Vim / Emacs / Sublime
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+*.sublime-workspace
+
+
+# -----------------------------------------------------------------------------
+# 8. SISTEMA OPERACIONAL
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+
+# -----------------------------------------------------------------------------
+# 9. LOGS E TEMPORÁRIOS
+# -----------------------------------------------------------------------------
+*.log
+logs/
+tmp/
+temp/
+*.tmp

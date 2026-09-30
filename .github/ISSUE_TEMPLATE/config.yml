@@ -1,0 +1,6 @@
+# Obriga o uso de um dos templates (desativa a issue "em branco").
+blank_issues_enabled: false
+contact_links:
+  - name: "❓ Dúvida geral ou suporte do laboratório"
+    url: https://github.com/[USUARIO_OU_ORG]/[NOME_DO_REPOSITORIO]/discussions
+    about: "Dúvidas que não são bug nem tarefa: use Discussions ou fale com a equipe do projeto."
