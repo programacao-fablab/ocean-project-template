@@ -131,11 +131,10 @@ Vídeo de demonstração: [LINK DO VÍDEO OU "não disponível"]
 
 | Nome | Papel | Responsabilidade no projeto | GitHub | Contato |
 |---|---|---|---|---|
-| [NOME COMPLETO] | Orientador(a) | [EX.: ORIENTAÇÃO ACADÊMICA E VALIDAÇÃO DE RESULTADOS] | [@usuario] | [email@uea.edu.br] |
-| [NOME COMPLETO] | Líder Técnico(a) | [EX.: REFERÊNCIA TÉCNICA E ARQUITETURA] | [@usuario] | [email@uea.edu.br] |
-| [NOME COMPLETO] | Dev Firmware | [EX.: LEITURA DE SENSORES E COMUNICAÇÃO MQTT] | [@usuario] | [email@uea.edu.br] |
-| [NOME COMPLETO] | Dev Frontend | [EX.: PAINEL WEB] | [@usuario] | [email@uea.edu.br] |
-| [NOME COMPLETO] | Fabricação Digital | [EX.: CARCAÇA IMPRESSA EM 3D] | [@usuario] | [email@uea.edu.br] |
+| [NOME COMPLETO] | Mecanica | [EX.: RESPONSAVEL PELA MODELAGEM] | [@usuario] | [email@uea.edu.br] |
+| [NOME COMPLETO] | ELétrica | [EX.: DESENVOLVEDOR DA PCB] | [@usuario] | [email@uea.edu.br] |
+| [NOME COMPLETO] |Programação | [EX.: LEITURA DE SENSORES E COMUNICAÇÃO MQTT] | [@usuario] | [email@uea.edu.br] |
+
 
 **Vínculo:** [PROGRAMA — ex.: PIBIC, TCC, Extensão, Projeto interno Ocean] · **Código/edital:** [NÚMERO OU "N/A"] · **Período:** [MM/AAAA] a [MM/AAAA]
 
